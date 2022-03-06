@@ -21,15 +21,15 @@ Get the local database ready
 
 Start the development server
 
-    $ FLASK_APP=wsgi.py flask run
+    $ FLASK_APP=wsgi.py flask run --port 5002
     * Serving Flask app "wsgi.py"
     * Environment: production
     WARNING: Do not use the development server in a production environment.
     Use a production WSGI server instead.
     * Debug mode: off
-    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit
+    * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit
 
-Check the service at http://127.0.0.1:5000/
+Check the service at http://127.0.0.1:5002/
 
 
 Tests
