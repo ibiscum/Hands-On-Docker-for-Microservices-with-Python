@@ -18,5 +18,4 @@ def create_app():
 
     api.add_namespace(api_namespace)
     api.add_namespace(admin_namespace)
-
     return application
