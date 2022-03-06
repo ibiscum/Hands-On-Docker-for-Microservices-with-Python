@@ -13,9 +13,9 @@ def get_username_from_session(request):
 
 
 def list_thoughts(request):
-    '''
+    """
     List the user's thoughts
-    '''
+    """
     username = get_username_from_session(request)
     if not username:
         return redirect('login')
@@ -32,9 +32,9 @@ def list_thoughts(request):
 
 
 def new_thought(request):
-    '''
+    """
     Create a new thought for the user
-    '''
+    """
     username = get_username_from_session(request)
     if not username:
         return redirect('login')
@@ -43,7 +43,7 @@ def new_thought(request):
 
     if text:
         # Only store the thought if there's text in it
-        new_thought = ThoughtModel(text=text, username=username)
-        new_thought.save()
+        _new_thought = ThoughtModel(text=text, username=username)
+        _new_thought.save()
 
     return redirect('list-thoughts')

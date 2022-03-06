@@ -8,6 +8,8 @@ logger = logging.getLogger(__name__)
 
 
 class UserModel(models.Model):
+    DoesNotExist = None
+    objects = None
     username = models.CharField(max_length=50)
     password_hash = models.CharField(max_length=100)
 
@@ -15,9 +17,9 @@ class UserModel(models.Model):
         pass
 
     def check_password(self, password):
-        '''
-        Check the stored password, if incorrect will raise IncorrecPassword
-        '''
+        """
+        Check the stored password, if incorrect will raise IncorrectPassword
+        """
         to_check = password.encode()
         db_hash = self.password_hash.encode()
         if bcrypt.hashpw(to_check, db_hash) == db_hash:
@@ -33,15 +35,17 @@ class UserModel(models.Model):
 
 
 class SessionModel(models.Model):
+    DoesNotExist = None
+    objects = None
     session = models.CharField(max_length=50)
     username = models.CharField(max_length=50)
 
     @classmethod
     def new_session(cls, username):
-        '''
+        """
         Create a new session for the user, store it,
         and clean old ones.
-        '''
+        """
         new_session = random.getrandbits(248)
         logger.error(new_session)
         new = cls(session=new_session, username=username)
@@ -55,6 +59,7 @@ class SessionModel(models.Model):
 
 
 class ThoughtModel(models.Model):
+    objects = None
     username = models.CharField(max_length=50)
     text = models.CharField(max_length=250)
     timestamp = models.DateTimeField(auto_now_add=True)

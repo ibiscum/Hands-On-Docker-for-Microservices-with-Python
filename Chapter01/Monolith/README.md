@@ -43,7 +43,7 @@ Test and login
 
 There are two users created in the system, `bruce` and `stephen`, their password are "password".
 
-You can log in as any of them, add more "throughs", and search for all the thoughts in the system. No need to be logged to search.
+You can log in as any of them, add more "thoughts", and search for all the thoughts in the system. No need to be logged to search.
 
 
 Dependencies
