@@ -44,9 +44,9 @@ class MeThoughtListCreate(Resource):
     @api_namespace.expect(authentication_parser)
     @api_namespace.marshal_with(thought_model, as_list=True)
     def get(self):
-        '''
+        """
         Retrieves all the thoughts
-        '''
+        """
         args = authentication_parser.parse_args()
         username = authentication_header_parser(args['Authorization'])
 
@@ -61,9 +61,9 @@ class MeThoughtListCreate(Resource):
     @api_namespace.expect(thought_parser)
     @api_namespace.marshal_with(thought_model, code=http.client.CREATED)
     def post(self):
-        '''
+        """
         Create a new thought
-        '''
+        """
         args = thought_parser.parse_args()
         username = authentication_header_parser(args['Authorization'])
 
@@ -80,7 +80,7 @@ class MeThoughtListCreate(Resource):
 
 search_parser = api_namespace.parser()
 search_parser.add_argument('search', type=str, required=False,
-                            help='Search in the text of the thoughts')
+                           help='Search in the text of the thoughts')
 
 
 @api_namespace.route('/thoughts/')
@@ -90,17 +90,14 @@ class ThoughtList(Resource):
     @api_namespace.marshal_with(thought_model, as_list=True)
     @api_namespace.expect(search_parser)
     def get(self):
-        '''
+        """
         Retrieves all the thoughts
-        '''
+        """
         args = search_parser.parse_args()
         search_param = args['search']
         query = ThoughtModel.query
         if search_param:
-            param = f'%{search_param}%'
-            query = (query.filter(ThoughtModel.text.ilike(param)))
-            # Old code, that it's not case insensitive in postgreSQL
-            # query = (query.filter(ThoughtModel.text.contains(search_param)))
+            query = (query.filter(ThoughtModel.text.contains(search_param)))
 
         query = query.order_by('id')
         thoughts = query.all()
@@ -114,9 +111,9 @@ class ThoughtsRetrieve(Resource):
     @api_namespace.doc('retrieve_thought')
     @api_namespace.marshal_with(thought_model)
     def get(self, thought_id):
-        '''
+        """
         Retrieve a thought
-        '''
+        """
         thought = ThoughtModel.query.get(thought_id)
         if not thought:
             # The thought is not present
