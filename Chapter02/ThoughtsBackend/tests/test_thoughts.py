@@ -1,9 +1,9 @@
-'''
+"""
 Test the Thoughts operations
 
 
 Use the thought_fixture to have data to retrieve, it generates three thoughts
-'''
+"""
 from unittest.mock import ANY
 import http.client
 from freezegun import freeze_time
@@ -63,7 +63,7 @@ def test_list_me_thoughts(client, thought_fixture):
     }
     response = client.post('/api/me/thoughts/', data=new_thought,
                            headers=headers)
-    result = response.json
+    # result = response.json
 
     assert http.client.CREATED == response.status_code
 

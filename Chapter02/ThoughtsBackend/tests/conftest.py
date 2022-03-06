@@ -20,9 +20,9 @@ def app():
 
 @pytest.fixture
 def thought_fixture(client):
-    '''
+    """
     Generate three thoughts in the system.
-    '''
+    """
 
     thought_ids = []
     for _ in range(3):
