@@ -1,0 +1,18 @@
+# docker build -f <dockerfile> --tag <tag> <context>
+docker build -f Dockerfile.simple --tag simple .
+docker images
+
+docker build -f Dockerfile.run --tag container-run .
+
+# docker run <image name> <command>
+docker run container-run cat /opt/example.txt
+
+ls
+docker run container-run /bin/sh -c 'cat /opt/example.txt > out.txt'
+ls
+
+docker run -it container-run /bin/sh
+cd opt/
+ls
+cat example.txt
+exit
