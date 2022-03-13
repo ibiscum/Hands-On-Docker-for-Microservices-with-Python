@@ -40,7 +40,7 @@ services:
         ports:
             - "5432:5432"
 
-    # Producion related
+    # Production related
     server:
         env_file: environment.env
         image: thoughts_server
