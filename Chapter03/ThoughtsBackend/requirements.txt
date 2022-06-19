@@ -62,7 +62,7 @@ py==1.11.0
     # via pytest
 pycparser==2.21
     # via cffi
-pyjwt==1.7.1
+pyjwt==2.4.0
     # via -r requirements.in
 pyparsing==3.0.7
     # via packaging
