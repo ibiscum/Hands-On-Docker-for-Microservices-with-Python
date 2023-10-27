@@ -9,7 +9,7 @@ faker
 pyjwt
 cryptography==41.0.4
 parse
-Werkzeug==0.16.1
+Werkzeug==3.0.1
 itsdangerous==2.0.1
 
 pytest
