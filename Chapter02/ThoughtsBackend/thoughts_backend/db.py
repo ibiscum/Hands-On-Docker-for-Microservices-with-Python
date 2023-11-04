@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from flask_sqlalchemy import SQLAlchemy
+
 dir_path = Path(os.path.dirname(os.path.realpath(__file__)))
 path = dir_path / '..'
 
