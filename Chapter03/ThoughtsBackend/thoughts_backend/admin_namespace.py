@@ -1,5 +1,5 @@
 import http.client
-from flask_restplus import Namespace, Resource
+from flask_restx import Namespace, Resource
 from thoughts_backend.models import ThoughtModel
 from thoughts_backend.db import db
 
