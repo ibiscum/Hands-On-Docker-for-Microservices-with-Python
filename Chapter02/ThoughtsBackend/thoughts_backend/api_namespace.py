@@ -1,6 +1,6 @@
 import http.client
 from datetime import datetime
-from flask_restplus import Namespace, Resource, fields
+from flask_restx import Namespace, Resource, fields
 from thoughts_backend import config
 from thoughts_backend.models import ThoughtModel
 from thoughts_backend.token_validation import validate_token_header

@@ -2,7 +2,7 @@ django
 bcrypt
 flake8
 flask
-flask-restplus
+flask-restx
 flask-sqlalchemy
 pytest
 pytest-flask
@@ -15,7 +15,7 @@ parse
 Werkzeug
 itsdangerous
 SQLAlchemy
-psycopg2
+psycopg2 == 2.9.9
 flask-request-id-header
 prometheus_client
 prometheus-flask-exporter
