@@ -1,5 +1,4 @@
-Chapter 7
-=======
+# Chapter 7
 
 Setups the three microservices (Thoughts Backend, Users Backend and Frontend) for production deployment. 
 

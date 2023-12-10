@@ -1,9 +1,8 @@
-"""
-Test the Thoughts operations
+# """
+# Test the Thoughts operations
 
-
-Use the thought_fixture to have data to retrieve, it generates three thoughts
-"""
+# Use the thought_fixture to have data to retrieve, it generates three thoughts
+# """
 from unittest.mock import ANY
 import http.client
 from freezegun import freeze_time

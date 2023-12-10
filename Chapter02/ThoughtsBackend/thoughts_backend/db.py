@@ -12,4 +12,5 @@ db_config = {
     'SQLALCHEMY_DATABASE_URI': DB_URI.format(file_path=FILE_PATH),
     'SQLALCHEMY_TRACK_MODIFICATIONS': False,
 }
+
 db = SQLAlchemy()
