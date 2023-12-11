@@ -1,0 +1,20 @@
+flask == 2.3.3
+flask_restx
+flask_sqlalchemy
+pytest_flask
+sqlalchemy
+django
+bcrypt
+flake8
+pytest
+freezegun
+delorean
+faker
+pyjwt
+cryptography
+parse
+Werkzeug
+itsdangerous
+flask-request-id-header
+prometheus_client
+prometheus-flask-exporter

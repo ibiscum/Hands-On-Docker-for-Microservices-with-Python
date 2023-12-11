@@ -8,7 +8,7 @@ services:
         build:
             dockerfile: docker/app/Dockerfile
             context: .
-        entrypoint: pytest
+        command: /bin/sh -c pytest
         volumes:
             - ./ThoughtsBackend:/opt/code
 

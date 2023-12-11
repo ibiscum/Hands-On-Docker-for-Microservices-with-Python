@@ -12,7 +12,6 @@ Create a virtual environment and install the requirements
     $ source ./venv/bin/activate
     $ pip install -r requirements.txt
 
-
 Get the local database ready
 
     $ python init_db.py

@@ -16,3 +16,14 @@ cd opt/
 ls
 cat example.txt
 exit
+
+
+
+docker build -f docker/app/Dockerfile --tag thoughts-backend .
+
+docker run -it -p 127.0.0.1:8000:8000/tcp thoughts-backend pytest
+docker container run -it thoughts-backend pytest
+
+docker compose build test-sqlite
+
+docker compose run test-sqlite

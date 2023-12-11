@@ -49,7 +49,7 @@ def test_invalid_token_header_not_expiry_time():
         'username': 'tonystark',
     }
     token = token_validation.encode_token(payload, PRIVATE_KEY)
-    token = token.decode('utf8')
+    # token = token.decode('utf8')
     header = f'Bearer {token}'
     result = token_validation.validate_token_header(header, PUBLIC_KEY)
     assert None is result
@@ -63,7 +63,7 @@ def test_invalid_token_header_expired():
         'exp': expiry,
     }
     token = token_validation.encode_token(payload, PRIVATE_KEY)
-    token = token.decode('utf8')
+    # token = token.decode('utf8')
     header = f'Bearer {token}'
     result = token_validation.validate_token_header(header, PUBLIC_KEY)
     assert None is result
@@ -76,7 +76,7 @@ def test_invalid_token_header_no_username():
         'exp': expiry,
     }
     token = token_validation.encode_token(payload, PRIVATE_KEY)
-    token = token.decode('utf8')
+    # token = token.decode('utf8')
     header = f'Bearer {token}'
     result = token_validation.validate_token_header(header, PUBLIC_KEY)
     assert None is result

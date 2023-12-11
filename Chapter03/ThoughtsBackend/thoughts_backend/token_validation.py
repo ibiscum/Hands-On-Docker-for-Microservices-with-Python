@@ -7,11 +7,11 @@ logger = logging.getLogger(__name__)
 
 
 def encode_token(payload, private_key):
-    return jwt.encode(payload, private_key, algorithm='RS256')
+    return jwt.encode(payload, private_key, algorithm="RS256")
 
 
 def decode_token(token, public_key):
-    return jwt.decode(token, public_key, algoritms='RS256')
+    return jwt.decode(token, public_key, algorithms=["RS256"])
 
 
 def generate_token_header(username, private_key):
@@ -24,7 +24,7 @@ def generate_token_header(username, private_key):
         'exp': datetime.utcnow() + timedelta(days=2),
     }
     token = encode_token(payload, private_key)
-    token = token.decode('utf8')
+    # token = token.decode('utf8')
     return f'Bearer {token}'
 
 
@@ -46,13 +46,13 @@ def validate_token_header(header, public_key):
         return None
     token = parse_result[0]
     try:
-        decoded_token = decode_token(token.encode('utf8'), public_key)
+        decoded_token = decode_token(token, public_key)
     except jwt.exceptions.DecodeError:
         logger.warning(f'Error decoding header "{header}". '
-                       'This may be key missmatch or wrong key')
+                       'This may be key mismatch or wrong key')
         return None
     except jwt.exceptions.ExpiredSignatureError:
-        logger.error(f'Authentication header has expired')
+        logger.error(f'Authentication header "{header}" has expired')
         return None
 
     # Check expiry is in the token
