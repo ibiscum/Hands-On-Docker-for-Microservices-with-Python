@@ -74,7 +74,7 @@ parse==1.20.1
     # via -r requirements.in
 pluggy==1.5.0
     # via pytest
-prometheus-client==0.19.0
+prometheus-client==0.20.0
     # via
     #   -r requirements.in
     #   prometheus-flask-exporter
