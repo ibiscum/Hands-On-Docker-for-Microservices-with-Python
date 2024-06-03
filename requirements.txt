@@ -117,7 +117,7 @@ typing-extensions==4.8.0
     # via sqlalchemy
 tzlocal==5.2
     # via delorean
-werkzeug==2.3.8
+werkzeug==3.0.3
     # via
     #   -r requirements.in
     #   flask
