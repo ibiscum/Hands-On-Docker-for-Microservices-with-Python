@@ -24,7 +24,7 @@ cryptography==42.0.5
     # via -r requirements.in
 delorean==1.0.0
     # via -r requirements.in
-django==5.0.5
+django==5.0.7
     # via -r requirements.in
 faker==25.2.0
     # via -r requirements.in
