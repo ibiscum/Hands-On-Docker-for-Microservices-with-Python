@@ -1,4 +1,4 @@
-flask == 2.3.3
+flask == 3.0.3
 flask_restx
 flask_sqlalchemy
 pytest_flask
