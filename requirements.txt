@@ -54,7 +54,7 @@ importlib-resources==6.1.1
     # via flask-restx
 iniconfig==2.0.0
     # via pytest
-itsdangerous==2.1.2
+itsdangerous==2.2.0
     # via
     #   -r requirements.in
     #   flask
