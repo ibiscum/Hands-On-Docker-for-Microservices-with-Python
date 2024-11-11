@@ -119,7 +119,7 @@ typing-extensions==4.8.0
     #   sqlalchemy
 tzlocal==5.2
     # via delorean
-werkzeug==3.0.3
+werkzeug==3.1.3
     # via
     #   -r requirements.in
     #   flask
