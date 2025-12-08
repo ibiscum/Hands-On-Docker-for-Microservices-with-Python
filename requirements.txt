@@ -28,7 +28,7 @@ django==5.1.4
     # via -r requirements.in
 faker==30.3.0
     # via -r requirements.in
-flake8==7.1.1
+flake8==7.3.0
     # via -r requirements.in
 flask==3.0.3
     # via
@@ -80,11 +80,11 @@ prometheus-client==0.20.0
     #   prometheus-flask-exporter
 prometheus-flask-exporter==0.23.1
     # via -r requirements.in
-pycodestyle==2.12.1
+pycodestyle==2.14.0
     # via flake8
 pycparser==2.21
     # via cffi
-pyflakes==3.2.0
+pyflakes==3.4.0
     # via flake8
 pyjwt==2.9.0
     # via -r requirements.in
