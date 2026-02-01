@@ -12,7 +12,7 @@ attrs==23.1.0
     # via jsonschema
 babel==2.13.1
     # via delorean
-bcrypt==4.1.3
+bcrypt==5.0.0
     # via -r requirements.in
 blinker==1.7.0
     # via flask
@@ -24,11 +24,11 @@ cryptography==43.0.1
     # via -r requirements.in
 delorean==1.0.0
     # via -r requirements.in
-django==5.1
+django==5.2.9
     # via -r requirements.in
 faker==30.3.0
     # via -r requirements.in
-flake8==7.0.0
+flake8==7.3.0
     # via -r requirements.in
 flask==3.0.3
     # via
@@ -54,7 +54,7 @@ importlib-resources==6.1.1
     # via flask-restx
 iniconfig==2.0.0
     # via pytest
-itsdangerous==2.1.2
+itsdangerous==2.2.0
     # via
     #   -r requirements.in
     #   flask
@@ -70,7 +70,7 @@ mccabe==0.7.0
     # via flake8
 packaging==23.2
     # via pytest
-parse==1.20.1
+parse==1.20.2
     # via -r requirements.in
 pluggy==1.5.0
     # via pytest
@@ -80,11 +80,11 @@ prometheus-client==0.20.0
     #   prometheus-flask-exporter
 prometheus-flask-exporter==0.23.1
     # via -r requirements.in
-pycodestyle==2.11.1
+pycodestyle==2.14.0
     # via flake8
 pycparser==2.21
     # via cffi
-pyflakes==3.2.0
+pyflakes==3.4.0
     # via flake8
 pyjwt==2.9.0
     # via -r requirements.in
@@ -119,7 +119,7 @@ typing-extensions==4.8.0
     #   sqlalchemy
 tzlocal==5.2
     # via delorean
-werkzeug==3.0.6
+werkzeug==3.1.4
     # via
     #   -r requirements.in
     #   flask
