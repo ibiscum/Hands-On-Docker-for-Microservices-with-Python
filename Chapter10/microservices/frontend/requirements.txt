@@ -1,7 +1,7 @@
-django==3.2.25
+django==4.2.27
 pyjwt==2.4.0
 parse==1.12.0
-requests==2.32.0
+requests==2.32.4
 bcrypt==3.1.7
-cryptography==43.0.1
+cryptography==44.0.1
 django-prometheus==1.0.15
