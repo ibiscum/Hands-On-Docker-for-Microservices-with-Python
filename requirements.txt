@@ -87,11 +87,13 @@ pycparser==2.21
     # via cffi
 pyflakes==3.4.0
     # via flake8
+pygments==2.19.2
+    # via pytest
 pyjwt==2.9.0
     # via -r requirements.in
 pyrsistent==0.20.0
     # via jsonschema
-pytest==8.3.2
+pytest==9.0.2
     # via
     #   -r requirements.in
     #   pytest-flask
