@@ -81,7 +81,7 @@ prometheus-client==0.24.1
     # via
     #   -r requirements.in
     #   prometheus-flask-exporter
-prometheus-flask-exporter==0.23.1
+prometheus-flask-exporter==0.23.2
     # via -r requirements.in
 pycodestyle==2.14.0
     # via flake8
