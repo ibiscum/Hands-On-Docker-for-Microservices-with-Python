@@ -113,7 +113,7 @@ rpds-py==0.30.0
     # via referencing
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.46
+sqlalchemy==2.0.48
     # via
     #   -r requirements.in
     #   flask-sqlalchemy
