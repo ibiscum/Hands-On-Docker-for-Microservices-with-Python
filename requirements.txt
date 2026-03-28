@@ -22,7 +22,7 @@ cffi==2.0.0
     # via cryptography
 click==8.1.7
     # via flask
-cryptography==46.0.5
+cryptography==46.0.6
     # via -r requirements.in
 delorean==1.0.0
     # via -r requirements.in
